@@ -1,0 +1,120 @@
+body{
+	font-family: 'Fira Sans', sans-serif;
+	position: static;
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor{
+	height: 100%;
+	width: 100%;
+}
+
+.petEscom{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top: 0px;
+	left: 0px;
+}
+
+.fondo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(img/fondo_header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.7;
+}
+
+.relativo{
+	position: relative;
+}
+
+.centrar{
+	position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+}
+
+.logo{
+	height:150px;
+	width:auto;
+	margin: 2%;
+}
+
+.pegadoIzq{
+	float:left;
+}
+
+.pegadoDer{
+	float:right;
+}
+
+#titulo{
+	padding-left: 25%;
+	font-size: 300%;
+	font-family: 'Pacifico', cursive;
+}
+
+#curso{
+	padding-left: 5%;
+	text-align: left;
+}
+
+nav{
+	text-align: center;
+	font-family: courier new;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li a:hover{
+	color:blue;
+	background-color: grey;
+	transform: skew(-15deg);
+}
+
+nav ul li{
+	float:left;
+	border-left: #000 solid;
+}
+
+nav ul li:first-child{
+	border-left: none;
+}
+
+nav ul li a{
+	display: block;
+	color: green;
+	text-decoration: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #4682B4;
+}
+
+
+/*table{
+	border: solid;
+	border-radius: 10px;
+}
+
+td,tr, th{
+	border:solid;
+}
+
+table tr:nth-child(odd){
+	background-color: #956235;
+}
