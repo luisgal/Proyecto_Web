@@ -1,3 +1,3 @@
 Proyecto Web
 
-Se reazlizara un sistema enfocado a ayudar a la adopción de mascotas.
+Se reazlizara un sistema enfocado a la venta de productos para mascoytas.
