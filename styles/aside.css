@@ -1,0 +1,12 @@
+.secundario{
+    float: right;
+    position: relative;
+    width: 35%;
+}
+
+.seccionA{
+    position: relative;
+    margin: 10px 3%;
+    width: 90%;
+    border: 2px solid red;
+}

@@ -95,6 +95,7 @@ body{
 }
 
 #lineTitulo{
+	position: relative;
     display: block;
     margin-top: 0.5em;
     margin-left: 18%;
@@ -106,6 +107,7 @@ body{
 }
 
 #curso{
+	position: relative;
 	padding-left: 3%;
 	text-align: left;
 	font-size: 1.2em;
@@ -159,17 +161,4 @@ body{
     border-width: 3px;
 	border-color: rgb(251, 255, 55);
 	border-radius: 3px;
-}
-
-/*table{
-	border: solid;
-	border-radius: 10px;
-}
-
-td,tr, th{
-	border:solid;
-}
-
-table tr:nth-child(odd){
-	background-color: #956235;
 }

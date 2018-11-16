@@ -1,0 +1,41 @@
+.principal{
+    float: left;
+    position: relative;
+    width: 65%;
+}
+
+.seccion{
+    position: relative;
+    margin: 10px 3%;
+    width: 96%;
+    border: 2px solid green;
+}
+
+.articulos{
+    position: relative;
+    margin: 1% .5%;
+    padding: .75%;
+    border: 2px solid orange;
+}
+
+.descripcionCorta{
+    width: auto;
+	border: solid;
+	border-radius: 10px;
+}
+
+td, tr{
+	border:solid;
+}
+
+table tr:nth-child(odd){
+	background-color: #956235;
+}
+
+.vistaInicial{
+    margin: 0px;
+    padding: 1px;
+    width: 98%;
+    height: auto;
+    margin: 1%;
+}
