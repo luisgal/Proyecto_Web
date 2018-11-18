@@ -1,5 +1,36 @@
-function saludar(){
-    document.write('<h1>Hola</h1><br>');
-    document.write('Con esto intentaremos funcion que escribe texto nos basaremos para modelar acticles y sections, con solo llamar a esta funcion y darle parametros de texto, imagenes que se agreguen');
-    document.write('<hr class="separador">');
+function articulo(){
+    document.write(
+    '<article class="articulos">',
+        '<table class="descripcionCorta">',
+            '<tr>',
+                '<td>Nombre</td>',
+                '<td>El Jeilo</td>',
+                '<td rowspan="5"><img src="styles/img/eljeilo.jpg" class="vistaInicial"></td>',
+            '</tr>',
+            '<tr>',
+                '<td>Precio</td>',
+                '<td>$5000</td>',
+            '</tr>',
+            '<tr>',
+                '<td>Calificacion</td>',
+                '<td>4.5</td>',
+            '</tr>',
+            '<tr>',
+                '<td>Descripción</td>',
+                '<td>Videojuego basado en dispros que hacen pium pium y solo quiero rellenas informacion vale bye :v</td>',
+            '</tr>',
+            '<tr>',
+                '<td colspan="2"><a href="#openModal"><button><span>Ver Más</span></button></a></td>',
+            '</tr>',
+        '</table>',
+        '<div id="openModal" class="modalDialog">',
+            '<div>',
+                '<a href="#close" title="Close" class="close">X</a>',
+                '<h2>Mi modal</h2>',
+                '<p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p>',
+                '<p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p>',
+            '</div>',
+        '</div>',
+    '</article>'
+    );
 }

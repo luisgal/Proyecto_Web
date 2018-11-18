@@ -6,21 +6,35 @@
 
 .seccion{
     position: relative;
-    margin: 10px 3%;
-    width: 96%;
-    border: 2px solid green;
+    margin: 6px 4%;
+    margin-right: 1%;
+    width: 95%;
+}
+
+.secundario{
+    float: right;
+    position: relative;
+    width: 35%;
+}
+
+.seccionA{
+    position: relative;
+    margin: 6px 4%;
+    margin-left: .5%;
+    width: 90%;
+    border: 1px solid red;
 }
 
 .articulos{
     position: relative;
-    margin: 1% .5%;
-    padding: .75%;
-    border: 2px solid orange;
+    margin: 0;
+    padding: .5%;
+    border: 1px solid orange;
 }
 
 .descripcionCorta{
-    width: auto;
-	border: solid;
+    margin: 1%;
+    border: solid;
 	border-radius: 10px;
 }
 
@@ -35,7 +49,110 @@ table tr:nth-child(odd){
 .vistaInicial{
     margin: 0px;
     padding: 1px;
-    width: 98%;
+    width: 97%;
     height: auto;
     margin: 1%;
+}
+
+
+
+
+button{
+    background-color: #2E9AFE;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(#2E9AFE, #81DAF5);
+
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 10px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover{
+    background: #00d9ff;
 }
