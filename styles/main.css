@@ -1,4 +1,4 @@
-.principal{
+#principal{
     float: left;
     position: relative;
     width: 65%;
@@ -11,7 +11,7 @@
     width: 95%;
 }
 
-.secundario{
+#secundario{
     float: right;
     position: relative;
     width: 35%;
@@ -40,12 +40,16 @@
     display: inline-block;
     margin: 0.5%;
     width: 23%;
-    border: solid 1px rgba(175, 175, 175, 0.3);
-    background-color: rgba(175, 175, 175, 0.1);
+    border: solid 1px rgba(108, 108, 108, 0.4);
+    background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.2),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0));
 }
 
 .sinFondo{
     background-color: white;
+}
+
+.imagenVistaM{
+    height: 200px;
 }
 
 
@@ -82,7 +86,27 @@
 	border-radius: 2px;
 }
 
+.tablaMuestra{
+    border-collapse: collapse;
+}
 
+.tablaMuestra td{
+    padding: 2px 7px;
+    border-bottom: solid 1px black;
+}
+
+.tablaMuestra td:nth-child(2){
+    text-align: right;
+}
+
+.tablaMuestra tr:last-child td, .tablaMuestra tr:first-child td:last-child{
+    padding: 2px;
+    border-bottom: solid 0px black;
+}
+
+.tablaMuestra tr:nth-child(2n+1) td:nth-child(2n), .tablaMuestra tr:nth-child(2n) td:nth-child(2n+1){
+    background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.15),rgba(108, 108, 108, 0.08),rgba(108, 108, 108, 0.05));
+}
 
 
 button{

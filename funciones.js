@@ -1,11 +1,11 @@
 function articuloMediano(){
     document.write(
     '<article class="articulos">',
-        '<table class="descripcionCorta">',
+        '<table class="descripcionCorta tablaMuestra">',
             '<tr>',
                 '<td>Nombre</td>',
                 '<td>El Jeilo</td>',
-                '<td rowspan="5"><img src="styles/img/eljeilo.jpg" class="vistaMediana"></td>',
+                '<td rowspan="5" class="sinFondo"><img src="styles/img/eljeilo.jpg" class="vistaMediana"></td>',
             '</tr>',
             '<tr>',
                 '<td>Precio</td>',
@@ -13,7 +13,7 @@ function articuloMediano(){
             '</tr>',
             '<tr>',
                 '<td>Calificacion</td>',
-                '<td>4.5</td>',
+                '<td>4.5 &#9733</td>',
             '</tr>',
             '<tr>',
                 '<td>Descripción</td>',
@@ -39,7 +39,7 @@ function articuloMediano(){
 function tablePresent(){
     document.write(
     '    <table class="descripcion">',
-    '        <tr class="sinFondo">',
+    '        <tr class="sinFondo imagenVistaM">',
     '            <td colspan="2"><img src="styles/img/eljeilo.jpg" class="vistaChica"></td>',
     '        </tr>',
     '        <tr>',
@@ -48,7 +48,7 @@ function tablePresent(){
     '        </tr>',
     '        <tr>',
     '            <td>Calificacion</td>',
-    '            <td>5</td>',
+    '            <td>5 &#9733</td>',
     '        </tr>',
     '        <tr>',
     '            <td>Precio</td>',
@@ -56,4 +56,14 @@ function tablePresent(){
     '        </tr>',
     '    </table>',
     );
+}
+
+function muestrario(){
+    document.write('<article class="articulos">');
+    tablePresent();
+    tablePresent();
+    tablePresent();
+    tablePresent();
+
+    document.write('<hr class="separadorH"></article>');
 }
