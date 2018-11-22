@@ -1,0 +1,232 @@
+#principal{
+    float: left;
+    position: relative;
+    width: 65%;
+}
+
+.seccion{
+    position: relative;
+    margin: 6px 4%;
+    margin-right: 1%;
+    width: 95%;
+}
+
+#secundario{
+    float: right;
+    position: relative;
+    width: 35%;
+}
+
+.seccionA{
+    position: relative;
+    margin: 6px 4%;
+    margin-left: .5%;
+    width: 90%;
+}
+
+.articulos{
+    position: relative;
+    margin: 0;
+    padding: 1%;
+}
+
+.descripcionCorta{
+    position: relative;
+    margin: 1%;
+}
+
+.descripcion{
+    position: relative;
+    display: inline-block;
+    margin: 0.5%;
+    width: 23%;
+    border: solid 1px rgba(108, 108, 108, 0.4);
+    background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.2),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0));
+}
+
+.descripcion:hover{
+    transform: scale(1.05);
+}
+
+.descripcionAs{
+    position: relative;
+    margin: 5%;
+    width: 90%;
+    border: solid 1px rgba(108, 108, 108, 0.4);
+    background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.2),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0));
+}
+
+.sinFondo{
+    background-color: white;
+}
+
+.imagenVistaM{
+    height: 200px;
+}
+
+
+.vistaMediana{
+    margin: 0px;
+    padding: 1px;
+    width: 85%;
+    height: auto;
+    align: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vistaChica{
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgPromocional{
+    margin: 5%;
+    padding: 2%;
+    width: 85%;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px rgba(108, 108, 108, 0.4);
+}
+
+.separadorH{
+	position: relative;
+    margin: 0.1em;
+    margin-left: 7%;
+    margin-right: 10%;
+    border-style: solid;
+    border-width: 2px;
+	border-color: rgb(251, 255, 55);
+	border-radius: 2px;
+}
+
+.tablaMuestra{
+    border-collapse: collapse;
+}
+
+.tablaMuestra td{
+    padding: 2px 7px;
+    border-bottom: solid 1px black;
+}
+
+.tablaMuestra td:nth-child(2){
+    text-align: right;
+}
+
+.tablaMuestra tr:last-child td, .tablaMuestra tr:first-child td:last-child{
+    padding: 2px;
+    border-bottom: solid 0px black;
+}
+
+.tablaMuestra tr:nth-child(2n+1) td:nth-child(2n), .tablaMuestra tr:nth-child(2n) td:nth-child(2n+1){
+    background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.15),rgba(108, 108, 108, 0.08),rgba(108, 108, 108, 0.05));
+}
+
+
+button{
+    background-color: #2E9AFE;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(#2E9AFE, #81DAF5);
+
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 10px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover{
+    background: #00d9ff;
+}
