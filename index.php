@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <?php include 'mysql.php';?>
     <header id="petEscom">
         <div class="centrar">
             <a href="https://www.ipn.mx/"><img class="logo pegadoIzq" src="styles/img/logo_ipn.png"></a>
@@ -60,9 +61,15 @@
         <section class="seccionA">
 
             <script type="text/javascript">
-                articuloMediano();
-                articuloMediano();
-                articuloMediano();
+                var data0 = [<?php echo '"'.implode('","', $row[0]).'"' ?>];
+                var data1 = [<?php echo '"'.implode('","', $row[1]).'"' ?>];
+                var data2 = [<?php echo '"'.implode('","', $row[2]).'"' ?>];
+
+                promocional(data0);
+                imgPromocional();
+                promocional(data1);
+                imgPromocional();
+                promocional(data2);
             </script>
 
         </section>

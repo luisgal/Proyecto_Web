@@ -44,6 +44,18 @@
     background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.2),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0));
 }
 
+.descripcion:hover{
+    transform: scale(1.05);
+}
+
+.descripcionAs{
+    position: relative;
+    margin: 5%;
+    width: 90%;
+    border: solid 1px rgba(108, 108, 108, 0.4);
+    background-image: linear-gradient(to bottom right, rgba(108, 108, 108, 0.2),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0.1),rgba(108, 108, 108, 0));
+}
+
 .sinFondo{
     background-color: white;
 }
@@ -69,10 +81,20 @@
     padding: 0px;
     width: 95%;
     height: auto;
-    align: center;
     display:block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.imgPromocional{
+    margin: 5%;
+    padding: 2%;
+    width: 85%;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px rgba(108, 108, 108, 0.4);
 }
 
 .separadorH{

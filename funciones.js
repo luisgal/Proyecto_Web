@@ -64,6 +64,33 @@ function muestrario(){
     tablePresent();
     tablePresent();
     tablePresent();
-
     document.write('<hr class="separadorH"></article>');
+}
+
+function promocional(data){
+    document.write(
+    '    <article class="articulos">',
+    '        <table class="descripcionAs">',
+    '            <tr class="sinFondo">',
+    '                <td colspan="2"><img src="styles/img/eljeilo.jpg" class="vistaChica"></td>',
+    '            </tr>',
+    '            <tr>',
+    '                <td>Nombre</td>',
+    '                <td>', data[1], '</td>',
+    '            </tr>',
+    '            <tr>',
+    '                <td>Calificacion</td>',
+    '                <td>', data[0],' ★</td>',
+    '            </tr>',
+    '        </table>',
+    '        <hr class="separadorH">',
+    '    </article>',
+    );
+}
+
+function imgPromocional(){
+    document.write(
+        '<img src="styles/img/eljeilo.jpg" class="imgPromocional">',
+        '<hr class="separadorH">'
+    );
 }
