@@ -35,6 +35,19 @@
     </div>
     <hr class="separador">
 
+    <footer id="pieDePag">
+        <p>
+            © SUPER PETSTORE - 04/10/2018<br>
+            EQUIPO 6<br>
+            Integrantes:<br>
+            -Brando Sánchez<br>
+            -Galindo Rodríguez<br>
+            -Edgar Cabañas<br>
+            -Alejandro Valdivia<br>
+            Correo: superpetstore@gmail.com
+        </p>
+    </footer>
+
 </body>
 
 </html>
