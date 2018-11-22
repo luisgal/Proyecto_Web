@@ -14,16 +14,19 @@
 
 <body>
     <header class="petEscom">
-        <div class="fondo contenedor"></div>
-        <div class="contenedor relativo">
-            <div class="centrar">
-                <a href="https://www.ipn.mx/"><img class="logo pegadoIzq" src="styles/img/logo_ipn.png"></a>
-                <a href="http://www.escom.ipn.mx/"><img class="logo pegadoDer" src="styles/img/logo_escom.png"></a>
-            </div>
-
-            <a class="inicio" href="http://localhost/TecnoWeb/Proyecto_Web/"><p id="titulo">&ltPet-ESCOM/&gt<hr id="lineTitulo"><p></a>
+        <div class="centrar">
+            <a href="https://www.ipn.mx/"><img class="logo pegadoIzq" src="styles/img/logo_ipn.png"></a>
+            <a href="http://www.escom.ipn.mx/"><img class="logo pegadoDer" src="styles/img/logo_escom.png"></a>
         </div>
+
+        <a class="inicio" href="http://localhost/TecnoWeb/Proyecto_Web/">
+            <p id="titulo">
+                &ltPet-ESCOM/&gt
+            </p>
+            <hr id="lineTitulo">
+        </a>
     </header>
+
     <div class="superior">
         <h1 id="curso">Tecnologías para la web -2CV9-</h1>
         <nav class="menu">
@@ -37,13 +40,33 @@
         </nav>
     </div>
 
-    <hr class="separador">
+    <hr id="separadorG">
 
     <main class="principal">
         <section class="seccion">
+            <article class="articulos">
+
+                <script type="text/javascript">
+                    tablePresent();
+                    tablePresent();
+                    tablePresent();
+                    tablePresent();
+                </script>
+
+                <hr class="separadorH">
+
+                <div id="openModal" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h2>Mi modal</h2>
+                        <p>Este es un ejemplo de modal creado gracias al poder de CSS3.</p>
+                        <p>Puedes hacer un montón de cosas aquí como alertas o incluso crear un formulario de registro aquí mismo.</p>
+                    </div>
+                </div>
+            </article>
+
             <script type="text/javascript">
-                articulo();
-                articulo();
+                articuloMediano();
             </script>
         </section>
     </main>
@@ -51,8 +74,8 @@
     <aside class="secundario">
         <section class="seccionA">
             <script type="text/javascript">
-                articulo();
-                articulo();
+                articuloMediano();
+                articuloMediano();
             </script>
         </section>
     </aside>
