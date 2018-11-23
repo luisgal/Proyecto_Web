@@ -1,13 +1,15 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
-	font-family: 'Muli', sans-serif;
+	font-family: 'Eczar', serif;
 	position: absolute;
-	top: 0;
-	left: 0;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: white;
 }
 
 .superior{
@@ -15,6 +17,7 @@ body{
 	top: 0px;
 	left: 0px;
 	width: 100%;
+	height: 50%;
 	color: white;
 }
 
@@ -23,23 +26,14 @@ body{
 }
 
 .contenedor{
-	height: 100%;
 	width: 100%;
 }
 
-.petEscom{
+#petEscom{
 	color: white;
 	position: relative;
 	width: 100%;
 	height: 50%;
-	top: 0px;
-	left: 0px;
-}
-
-.fondo{
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	background-image: linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
@@ -47,24 +41,30 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	opacity: 0.85;
+	opacity: 0.8;
 }
 
 .relativo{
 	position: relative;
 }
 
+.absoluto{
+	position: absolute;
+}
+
 .centrar{
 	position: relative;
-    left: 0;
     top: 15%;
     width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .logo{
 	position: relative;
-	height:150px;
-	width:auto;
+	height: auto;
+	width: 12.5%;
 	margin: 2%;
 }
 
@@ -74,6 +74,7 @@ body{
 
 .pegadoDer{
 	float: right;
+	margin: 4%;
 }
 
 .inicio{
@@ -85,19 +86,17 @@ body{
 }
 
 #titulo{
-	position: relative;
 	padding-left: 23%;
-	font-size: 4.5em;
+	font-size: 450%;
 	font-family: 'Pacifico', cursive;
 	margin-bottom: 5px;
 	margin-top: 5px;
-	padding-top: 70px;
+	padding-top: 6%;
 }
 
 #lineTitulo{
-    display: block;
-    margin-top: 0.5em;
-    margin-left: 18%;
+	margin-top: 0.5em;
+    margin-left: 20%;
     margin-right: 20%;
     border-style: solid;
     border-width: 5px;
@@ -106,17 +105,20 @@ body{
 }
 
 #curso{
-	padding-left: 3%;
+    position: absolute;
+	top: 5%;
+	left: 3%;
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 120%;
+    margin: 3px;
 }
 
 .menu{
-	float: right;
+	align: right;
 	position: absolute;
-	top: 35%;
+	top: 5%;
 	right: 3%;
-	font-size: 1.3em;
+	font-size: 130%;
 	font-weight: 800;
 }
 
@@ -129,18 +131,19 @@ body{
 .menu li{
 	margin: 1px 2px 1px 2px;
 	padding: 1px 5px 1px 5px;
-	float:left;
+	display: inline-block;
 }
 
 .menu li:hover{
 	margin: 0px 10px 0px 10px;
 	padding: 2px 10px 2px 10px;
-	background-color: rgb(18, 17, 16);
-	transform: skew(-8deg);
+	background-color: rgba(105, 255, 0, 0.3);
+	transform: skew(-5deg);
+    border-radius: 5px;
 }
 
 .menu li a:hover{
-	transform: scale(1.1);
+	transform: scale(1.08);
 }
 
 .menu a{
@@ -150,7 +153,7 @@ body{
 	padding-right: 2px;
 }
 
-.separador{
+.separadorG{
 	position: relative;
     margin-top: 0.5em;
     margin-left: 5%;
@@ -162,11 +165,24 @@ body{
 }
 
 #pieDePag{
+	position: relative;
     overflow: auto;
-    border-radius: 10px;
-    background-image: linear-gradient(#1C1C1C, #424242);
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ), url(img/fondo_footer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.8;
     text-align: center;
-    color: #E6E6E6;
-	bottom: 0px;
+    color: white;
+}
+
+#tituloPie{
+    font-size: 250%;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-top: 2%;
 }
