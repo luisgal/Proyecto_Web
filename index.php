@@ -13,7 +13,9 @@
 </head>
 
 <body>
+
     <?php include 'mysql.php';?>
+
     <header id="petEscom">
         <a class="inicio" href="http://localhost/TecnoWeb/Proyecto_Web/">
             <p id="titulo">

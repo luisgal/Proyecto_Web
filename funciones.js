@@ -28,7 +28,7 @@ function articuloMediano(){
             '<div>',
                 '<a href="#close" title="Close" class="close">X</a>');
 
-                tablePresentM();
+                tablePresentDetalles();
 
     document.write(
             '</div>',
@@ -37,7 +37,7 @@ function articuloMediano(){
     );
 }
 
-function tablePresentM(){
+function tablePresentDetalles(){
     document.write(
     '<article class="articulos">',
         '<table class="descripcionCorta tablaMuestra">',
@@ -64,6 +64,7 @@ function tablePresentM(){
 
 function tablePresent(){
     document.write(
+    '<a href="#openModal">',
     '    <table class="descripcion">',
     '        <tr class="sinFondo imagenVistaM">',
     '            <td colspan="2"><img src="styles/img/eljeilo.jpg" class="vistaChica"></td>',
@@ -81,7 +82,16 @@ function tablePresent(){
     '            <td>$5000</td>',
     '        </tr>',
     '    </table>',
-    );
+    '</a>',
+    '<div id="openModal" class="modalDialog">',
+        '<div>',
+            '<a href="#close" title="Close" class="close">X</a>');
+
+            tablePresentDetalles();
+
+document.write(
+        '</div>',
+    '</div>');
 }
 
 function muestrario(){
