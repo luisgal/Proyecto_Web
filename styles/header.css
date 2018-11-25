@@ -1,13 +1,15 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body{
-	font-family: 'Muli', sans-serif;
+	font-family: 'Eczar', serif;
 	position: absolute;
-	top: 0;
-	left: 0;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: white;
 }
 
 .superior{
@@ -24,7 +26,6 @@ body{
 }
 
 .contenedor{
-	height: 100%;
 	width: 100%;
 }
 
@@ -40,7 +41,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	opacity: 0.85;
+	opacity: 0.8;
 }
 
 .relativo{
@@ -95,8 +96,8 @@ body{
 
 #lineTitulo{
 	margin-top: 0.5em;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
     border-style: solid;
     border-width: 5px;
 	border-color: rgb(251, 255, 55);
@@ -104,10 +105,12 @@ body{
 }
 
 #curso{
-	position: relative;
-	padding-left: 3%;
+    position: absolute;
+	top: 5%;
+	left: 3%;
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 120%;
+    margin: 3px;
 }
 
 .menu{
@@ -128,18 +131,19 @@ body{
 .menu li{
 	margin: 1px 2px 1px 2px;
 	padding: 1px 5px 1px 5px;
-	float:left;
+	display: inline-block;
 }
 
 .menu li:hover{
 	margin: 0px 10px 0px 10px;
 	padding: 2px 10px 2px 10px;
-	background-color: rgb(18, 17, 16);
-	transform: skew(-8deg);
+	background-color: rgba(105, 255, 0, 0.3);
+	transform: skew(-5deg);
+    border-radius: 5px;
 }
 
 .menu li a:hover{
-	transform: scale(1.1);
+	transform: scale(1.08);
 }
 
 .menu a{
@@ -149,7 +153,7 @@ body{
 	padding-right: 2px;
 }
 
-#separadorG{
+.separadorG{
 	position: relative;
     margin-top: 0.5em;
     margin-left: 5%;
@@ -158,4 +162,27 @@ body{
     border-width: 3px;
 	border-color: rgb(251, 255, 55);
 	border-radius: 3px;
+}
+
+#pieDePag{
+	position: relative;
+    overflow: auto;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ), url(img/fondo_footer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.8;
+    text-align: center;
+    color: white;
+}
+
+#tituloPie{
+    font-size: 250%;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-top: 2%;
 }
