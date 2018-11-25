@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
 
     <link href="https://fonts.googleapis.com/css?family=Eczar|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/aside.css">
-    <script type="text/javascript" src="funciones.js"></script>
+    <link rel="stylesheet" href="statics/css/header.css">
+    <link rel="stylesheet" href="statics/css/main.css">
+    <script type="text/javascript" src="statics/js/funciones.js"></script>
 
     <title>&ltPet-ESCOM/&gt</title>
 </head>
 
 <body>
 
-    <?php include 'mysql.php';?>
+    <?php include 'statics/data/mysql.php';?>
 
     <header id="petEscom">
         <a class="inicio" href="http://localhost/TecnoWeb/Proyecto_Web/">
@@ -27,8 +26,8 @@
 
     <div class="superior">
         <div class="centrar">
-            <a href="https://www.ipn.mx/"><img class="logo pegadoIzq" src="styles/img/logo_ipn.png"></a>
-            <a href="http://www.escom.ipn.mx/"><img class="logo pegadoDer" src="styles/img/logo_escom.png"></a>
+            <a href="https://www.ipn.mx/"><img class="logo pegadoIzq" src="statics/img/logo_ipn.png"></a>
+            <a href="http://www.escom.ipn.mx/"><img class="logo pegadoDer" src="statics/img/logo_escom.png"></a>
         </div>
 
         <h1 id="curso">Tecnologías para la web -2CV9-</h1>
