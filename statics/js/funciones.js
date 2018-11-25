@@ -5,7 +5,7 @@ function articuloMediano(){
             '<tr>',
                 '<td>Nombre</td>',
                 '<td>El Jeilo</td>',
-                '<td rowspan="5" class="sinFondo"><img src="styles/img/eljeilo.jpg" class="vistaMediana"></td>',
+                '<td rowspan="5" class="sinFondo"><img src="statics/img/eljeilo.jpg" class="vistaMediana"></td>',
             '</tr>',
             '<tr>',
                 '<td>Precio</td>',
@@ -44,7 +44,7 @@ function tablePresentDetalles(){
             '<tr>',
                 '<td>Nombre</td>',
                 '<td>El Jeilo</td>',
-                '<td rowspan="5" class="sinFondo"><img src="styles/img/eljeilo.jpg" class="vistaMediana"></td>',
+                '<td rowspan="5" class="sinFondo"><img src="statics/img/eljeilo.jpg" class="vistaMediana"></td>',
             '</tr>',
             '<tr>',
                 '<td>Precio</td>',
@@ -67,7 +67,7 @@ function tablePresent(){
     '<a href="#openModal">',
     '    <table class="descripcion">',
     '        <tr class="sinFondo imagenVistaM">',
-    '            <td colspan="2"><img src="styles/img/eljeilo.jpg" class="vistaChica"></td>',
+    '            <td colspan="2"><img src="statics/img/eljeilo.jpg" class="vistaChica"></td>',
     '        </tr>',
     '        <tr>',
     '            <td>Nombre</td>',
@@ -108,7 +108,7 @@ function promocional(data){
     '    <article class="articulos">',
     '        <table class="descripcionAs">',
     '            <tr class="sinFondo">',
-    '                <td colspan="2"><img src="styles/img/eljeilo.jpg" class="vistaChica"></td>',
+    '                <td colspan="2"><img src="statics/img/eljeilo.jpg" class="vistaChica"></td>',
     '            </tr>',
     '            <tr>',
     '                <td>Nombre</td>',
@@ -126,7 +126,7 @@ function promocional(data){
 
 function imgPromocional(){
     document.write(
-        '<img src="styles/img/eljeilo.jpg" class="imgPromocional">',
+        '<img src="statics/img/eljeilo.jpg" class="imgPromocional">',
         '<hr class="separadorH">'
     );
 }

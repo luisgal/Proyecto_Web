@@ -6,7 +6,7 @@
     background-image: linear-gradient(
       rgba(29, 135, 163, 0.25),
       rgba(29, 135, 163, 0.25)
-    ), url(img/fondo_main_aside.jpg);
+    ), url(../img/fondo_main_aside.jpg);
 }
 
 #principal{
@@ -250,7 +250,7 @@ button:hover span:after {
     background-image: linear-gradient(
       rgba(9, 91, 112, 0.6),
       rgba(29, 135, 163, 0.1)
-    ), url(img/fondo_main_aside.jpg);
+    ), url(../img/fondo_main_aside.jpg);
 }
 
 .close {

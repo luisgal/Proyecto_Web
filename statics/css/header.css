@@ -37,7 +37,7 @@ body{
 	background-image: linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ), url(img/fondo_header.jpg);
+    ), url(../img/fondo_header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -170,7 +170,7 @@ body{
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
-    ), url(img/fondo_footer.jpg);
+    ), url(../img/fondo_footer.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
