@@ -106,6 +106,7 @@ function muestrario(){
 function promocional(data){
     document.write(
     '    <article class="articulos">',
+    '<a href="#openModal">',
     '        <table class="descripcionAs">',
     '            <tr class="sinFondo">',
     '                <td colspan="2"><img src="statics/img/eljeilo.jpg" class="vistaChica"></td>',
@@ -119,6 +120,16 @@ function promocional(data){
     '                <td>', data[0],' ★</td>',
     '            </tr>',
     '        </table>',
+    '</a>',
+    '<div id="openModal" class="modalDialog">',
+        '<div>',
+            '<a href="#close" title="Close" class="close">X</a>');
+
+            tablePresentDetalles();
+
+document.write(
+        '</div>',
+    '</div>',
     '        <hr class="separadorH">',
     '    </article>',
     );
@@ -126,7 +137,18 @@ function promocional(data){
 
 function imgPromocional(){
     document.write(
+        '<a href="#openModal">',
         '<img src="statics/img/eljeilo.jpg" class="imgPromocional">',
+        '</a>',
+        '<div id="openModal" class="modalDialog">',
+            '<div>',
+                '<a href="#close" title="Close" class="close">X</a>');
+
+                tablePresentDetalles();
+
+    document.write(
+            '</div>',
+        '</div>',
         '<hr class="separadorH">'
     );
 }
