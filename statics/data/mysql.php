@@ -38,4 +38,6 @@
     }
 
     $row = [array_map("utf8_encode", imprimirCiudades(obtenerNum())), array_map("utf8_encode", imprimirCiudades(obtenerNum())), array_map("utf8_encode", imprimirCiudades(obtenerNum())), array_map("utf8_encode", imprimirCiudades(obtenerNum()))];
+
+    mysqli_close($link);
 ?>

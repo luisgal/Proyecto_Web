@@ -16,7 +16,7 @@
     <?php include 'statics/data/mysql.php';?>
 
     <header id="petEscom">
-        <a class="inicio" href="http://localhost/TecnoWeb/Proyecto_Web/">
+        <a class="inicio" href="index.php">
             <p id="titulo">
                 &ltPet-ESCOM/&gt
             </p>
@@ -34,10 +34,9 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="http://localhost/TecnoWeb/Proyecto_Web/">Inicio</a></li>
-                <li><a href="products.html">Productos</a></li>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="productos.php">Productos</a></li>
                 <li><a href="login.html">Mi Cuenta</a></li>
-                <li><a href="about.html">Sobre nosotros</a></li>
             </ul>
         </nav>
     </div>
