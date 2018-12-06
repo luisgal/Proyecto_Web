@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
 
+    <?php include 'statics/data/mysql.php';?>
     <link href="https://fonts.googleapis.com/css?family=Eczar|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="statics/css/header.css">
     <link rel="stylesheet" href="statics/css/main.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="statics/js/funciones.js"></script>
+    <script type="text/javascript">
+        productos = new Array();
+
+        <?php foreach ($productos as $key => $value) {  ?>
+
+            productos.push(<?php echo '{';foreach ($value as $k => $v){echo $k . ':"' . str_replace("\n","<br>",$v) . '"';if($k != 'imagen'){echo ',';}}echo '}'; ?>);
+
+        <?php }?>
+    </script>
 
     <title>&ltPet-ESCOM/&gt</title>
 </head>
 
 <body>
 
-    <?php include 'statics/data/mysql.php';?>
 
     <header id="petEscom">
         <a class="inicio" href="index.php">
@@ -47,10 +56,7 @@
             <section class="seccion">
 
                 <script type="text/javascript">
-                    muestrario();
-                    muestrario();
-                    muestrario();
-                    muestrario();
+                    muestrarioMediano(productos);
                 </script>
 
             </section>

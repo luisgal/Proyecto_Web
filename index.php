@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
 
+    <?php include 'statics/data/mysql.php';?>
     <link href="https://fonts.googleapis.com/css?family=Eczar|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="statics/css/header.css">
     <link rel="stylesheet" href="statics/css/main.css">
     <script type="text/javascript" src="statics/js/funciones.js"></script>
+    <script type="text/javascript">
+        productos = new Array();
+
+        <?php foreach ($productos as $key => $value) {  ?>
+
+            productos.push(<?php echo '{';foreach ($value as $k => $v){echo $k . ':"' . str_replace("\n","<br>",$v) . '"';if($k != 'imagen'){echo ',';}}echo '}'; ?>);
+
+        <?php }?>
+    </script>
 
     <title>&ltPet-ESCOM/&gt</title>
 </head>
 
 <body>
-
-    <?php include 'statics/data/mysql.php';?>
 
     <header id="petEscom">
         <a class="inicio" href="index.php">
@@ -48,10 +56,12 @@
             <section class="seccion">
 
                 <script type="text/javascript">
-                    muestrario();
-                    articuloMediano();
-                    muestrario();
-                    articuloMediano();
+                    a = [productos[2],productos[3],productos[4],productos[5]];
+                    b = [productos[2+4],productos[3+4],productos[4+4],productos[5+4]];
+                    muestrario(a);
+                    articuloMediano(productos[10]);
+                    muestrario(b);
+                    articuloMediano(productos[11]);
                 </script>
 
             </section>
@@ -60,17 +70,12 @@
         <aside id="secundario">
             <section class="seccionA">
 
-                <script type="text/javascript">
-                    var data0 = [<?php echo '"'.implode('","', $row[0]).'"' ?>];
-                    var data1 = [<?php echo '"'.implode('","', $row[1]).'"' ?>];
-                    var data2 = [<?php echo '"'.implode('","', $row[2]).'"' ?>];
-
-                    promocional(data0);
-                    imgPromocional();
-                    promocional(data1);
-                    imgPromocional();
+                <script type="text/JavaScript">
+                    promocional(productos[0]);
+                    imgPromocional(productos[12]);
+                    promocional(productos[1]);
+                    imgPromocional(productos[13]);
                 </script>
-
             </section>
         </aside>
     </div>

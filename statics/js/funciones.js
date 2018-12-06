@@ -1,34 +1,34 @@
-function articuloMediano(){
+function articuloMediano(data){
     document.write(
     '<article class="articulos">',
         '<table class="descripcionCorta tablaMuestra">',
             '<tr>',
                 '<td>Nombre</td>',
-                '<td>El Jeilo</td>',
-                '<td rowspan="5" class="sinFondo"><img src="statics/img/eljeilo.jpg" class="vistaMediana"></td>',
+                '<td>', data.nombre ,'</td>',
+                '<td rowspan="5" class="sinFondo"><img src="', data.imagen ,'" class="vistaMediana"></td>',
             '</tr>',
             '<tr>',
                 '<td>Precio</td>',
-                '<td>$5000</td>',
+                '<td>$', data.precio ,'</td>',
             '</tr>',
             '<tr>',
                 '<td>Calificacion</td>',
-                '<td>4.5 &#9733</td>',
+                '<td>', data.calificacion ,' &#9733</td>',
             '</tr>',
             '<tr>',
                 '<td>Descripción</td>',
-                '<td>Videojuego basado en dispros que hacen pium pium y solo quiero rellenas informacion vale bye :v</td>',
+                '<td>', data.descripcion ,'</td>',
             '</tr>',
             '<tr>',
-                '<td colspan="2" class="boton"><a href="#openModal"><button><span>Ver Más</span></button></a></td>',
+                '<td colspan="2" class="boton"><a href="#openModal', data.idProducto ,'"><button><span>Ver Más</span></button></a></td>',
             '</tr>',
         '</table>',
         '<hr class="separadorH">',
-        '<div id="openModal" class="modalDialog">',
+        '<div id="openModal', data.idProducto ,'" class="modalDialog">',
             '<div>',
                 '<a href="#close" title="Close" class="close">X</a>');
 
-                tablePresentDetalles();
+                tablePresentDetalles(data);
 
     document.write(
             '</div>',
@@ -37,95 +37,94 @@ function articuloMediano(){
     );
 }
 
-function tablePresentDetalles(){
+function tablePresentDetalles(data){
     document.write(
     '<article class="articulos">',
         '<table class="descripcionCorta tablaMuestra">',
             '<tr>',
                 '<td>Nombre</td>',
-                '<td>El Jeilo</td>',
-                '<td rowspan="5" class="sinFondo"><img src="statics/img/eljeilo.jpg" class="vistaMediana"></td>',
+                '<td>', data.nombre ,'</td>',
+                '<td rowspan="5" class="sinFondo"><img src="', data.imagen ,'" class="vistaMediana"></td>',
             '</tr>',
             '<tr>',
                 '<td>Precio</td>',
-                '<td>$5000</td>',
+                '<td>$', data.precio ,'</td>',
             '</tr>',
             '<tr>',
                 '<td>Calificacion</td>',
-                '<td>4.5 &#9733</td>',
+                '<td>', data.calificacion ,' &#9733</td>',
             '</tr>',
             '<tr>',
                 '<td>Descripción</td>',
-                '<td>Videojuego basado en dispros que hacen pium pium y solo quiero rellenas informacion vale bye :v</td>',
+                '<td>', data.descripcionLarga ,'</td>',
             '</tr>',
         '</table>',
     '</article>');
 }
 
-function tablePresent(){
+function tablePresent(data){
     document.write(
-    '<a href="#openModal">',
+    '<a href="#openModal', data.idProducto ,'">',
     '    <table class="descripcion">',
-    '        <tr class="sinFondo imagenVistaM">',
-    '            <td colspan="2"><img src="statics/img/eljeilo.jpg" class="vistaChica"></td>',
-    '        </tr>',
-    '        <tr>',
-    '            <td>Nombre</td>',
-    '            <td>El Jeilo</td>',
+    '        <tr class="sinFondo">',
+    '            <td colspan="2"><img src="', data.imagen ,'" class="imagenVistaM"></td>',
     '        </tr>',
     '        <tr>',
     '            <td>Calificacion</td>',
-    '            <td>5 &#9733</td>',
+    '            <td>', data.calificacion ,' &#9733</td>',
     '        </tr>',
     '        <tr>',
     '            <td>Precio</td>',
-    '            <td>$5000</td>',
+    '            <td>$', data.precio ,'</td>',
     '        </tr>',
     '    </table>',
     '</a>',
-    '<div id="openModal" class="modalDialog">',
+    '<div id="openModal', data.idProducto ,'" class="modalDialog">',
         '<div>',
             '<a href="#close" title="Close" class="close">X</a>');
 
-            tablePresentDetalles();
+            tablePresentDetalles(data);
 
 document.write(
         '</div>',
     '</div>');
 }
 
-function muestrario(){
+function muestrario(productos){
     document.write('<article class="articulos">');
-    tablePresent();
-    tablePresent();
-    tablePresent();
-    tablePresent();
+    for(x=0;x<productos.length;x++){
+        tablePresent(productos[x]);
+    }
+    document.write('<hr class="separadorH"></article>');
+}
+
+function muestrarioMediano(productos){
+    document.write('<article class="articulos">');
+    for(x=0;x<productos.length;x++){
+        articuloMediano(productos[x]);
+    }
     document.write('<hr class="separadorH"></article>');
 }
 
 function promocional(data){
     document.write(
     '    <article class="articulos">',
-    '<a href="#openModal">',
+    '<a href="#openModal', data.idProducto ,'">',
     '        <table class="descripcionAs">',
     '            <tr class="sinFondo">',
-    '                <td colspan="2"><img src="statics/img/eljeilo.jpg" class="vistaChica"></td>',
+    '                <td colspan="2"><img src="', data.imagen ,'" class="vistaChica"></td>',
     '            </tr>',
     '            <tr>',
-    '                <td>Nombre</td>',
-    '                <td>', data[1], '</td>',
-    '            </tr>',
-    '            <tr>',
-    '                <td>Calificacion</td>',
-    '                <td>', data[0],' ★</td>',
+    '                <td>', data.nombre, '</td>',
+    '                <td>', data.calificacion,' ★</td>',
     '            </tr>',
     '        </table>',
     '</a>',
-    '<div id="openModal" class="modalDialog">',
+    '<div id="openModal', data.idProducto ,'" class="modalDialog">',
         '<div>',
             '<a href="#close" title="Close" class="close">X</a>');
 
-            tablePresentDetalles();
+            tablePresentDetalles(data);
 
 document.write(
         '</div>',
@@ -135,16 +134,16 @@ document.write(
     );
 }
 
-function imgPromocional(){
+function imgPromocional(data){
     document.write(
-        '<a href="#openModal">',
-        '<img src="statics/img/eljeilo.jpg" class="imgPromocional">',
+        '<a href="#openModal', data.idProducto ,'">',
+        '<img src="', data.imagen ,'" class="imgPromocional">',
         '</a>',
-        '<div id="openModal" class="modalDialog">',
+        '<div id="openModal', data.idProducto ,'" class="modalDialog">',
             '<div>',
                 '<a href="#close" title="Close" class="close">X</a>');
 
-                tablePresentDetalles();
+                tablePresentDetalles(data);
 
     document.write(
             '</div>',
