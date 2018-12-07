@@ -40,6 +40,7 @@ function articuloMediano(data){
 function tablePresentDetalles(data){
     document.write(
     '<article class="articulos">',
+        '<button><span>Comprar Producto</span></button>',
         '<table class="descripcionCorta tablaMuestra">',
             '<tr>',
                 '<td>Nombre</td>',
